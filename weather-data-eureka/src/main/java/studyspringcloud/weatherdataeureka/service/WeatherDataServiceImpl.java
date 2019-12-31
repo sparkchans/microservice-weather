@@ -29,12 +29,6 @@ public class WeatherDataServiceImpl implements WeatherDataService {
         return this.doGetWeather(uri);
     }
 
-    @Override
-    public WeatherResponse getDataByCityName(String cityName) {
-        String uri = WEATHER_URI.concat("city=").concat(cityName);
-        return this.doGetWeather(uri);
-    }
-
     private WeatherResponse doGetWeather(String uri) {
         WeatherResponse resp = null;
         String strBody = null;

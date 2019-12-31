@@ -16,12 +16,4 @@ public interface WeatherDataService {
      * @return 天气数据
      */
     WeatherResponse getDataByCityId(String cityId);
-
-    /**
-     * 根据城市名称查询天气数据
-     *
-     * @param cityName
-     * @return 天气数据
-     */
-    WeatherResponse getDataByCityName(String cityName);
 }
