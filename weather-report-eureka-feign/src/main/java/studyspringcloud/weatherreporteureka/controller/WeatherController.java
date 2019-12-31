@@ -45,7 +45,7 @@ public class WeatherController {
         model.addAttribute("title", "老卫的天气预报");
         model.addAttribute("cityId", cityId);
         model.addAttribute("cityList", cityList);
-//        model.addAttribute("report", weatherReportService.getDataByCityId(cityId));
+        model.addAttribute("report", weatherReportService.getDataByCityId(cityId));
         return new ModelAndView("weather/report", "reportModel", model);
     }
 }
